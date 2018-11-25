@@ -1,0 +1,33 @@
+.item{
+  &__content{
+    display: flex;
+  }
+  &__image{
+    background-image: url('../img/rectangle.png');
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: -31px -14px;
+  }
+  &__title{
+    text-align: center;
+    color: $text_color;
+    font-family: Roboto;
+    font-size: $item_title_fsz;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.4px;
+  }
+  &__text{
+    opacity: $sm_text_opacity;
+    color: $text_color;
+    font-family: Roboto;
+    font-size: $sm_text_fsz;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+  }
+  &__decorate{
+    display: flex;
+    justify-content: center;
+  }
+}

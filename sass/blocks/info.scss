@@ -1,0 +1,20 @@
+.info{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  align-items: center;
+  &__link{
+    display: block;
+    padding: 4px 10px;
+    border: 1px solid $nav_text_color;
+    border-radius: 50%;
+    color: $nav_text_color;
+    opacity: 0.9;
+  }
+  &__lang{
+    color: $nav_text_color;
+  }
+  &__lang--hidden{
+    display: none;
+  }
+}

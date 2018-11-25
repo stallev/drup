@@ -1,14 +1,28 @@
 .nav{
   &--header{
-
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
   }
 }
 .nav__list{
   display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  align-items: center;
 }
 .nav__item{
-  display: block;
 }
 .nav__link{
-
+  opacity: 0.2;
+  color: $nav_text_color;
+  font-family: "Proxima Nova";
+  font-size: $sm_text_fsz;
+  font-weight: 400;
+  line-height: 36px;
+  // Text style for "Наши преим"
+  letter-spacing: 0.38px;
+  &--current{
+    color: $nav_text_color;
+  }
 }

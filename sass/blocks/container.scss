@@ -1,7 +1,11 @@
 .container{
-	width: 1170px;
+	width: 1370px;
 	margin: 0 auto;
   &--header-upper{
     display: flex;
+    justify-content: space-around;
+  }
+  &--section{
+    padding: 0 100px;
   }
 }

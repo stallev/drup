@@ -1,11 +1,29 @@
 .header{
-
+  padding: 50px 0 250px 0;
+  background-color: $header_bg_color;
 }
 .header__upper{
-
+  margin-bottom: 100px;
 }
 .header__bottom{
-
+  &-content{
+    position: relative;
+    display: flex;
+    padding-left: 100px;
+  }
+  &-image{
+    position: absolute;
+    width: 1000px;
+    height: 580px;
+    left: 400px;
+    background-image: url(../img/Color_balance.png);
+    background-repeat: no-repeat;
+    background-position: -88px 0;
+    background-size: cover;
+  }
+}
+.header__logo{
+  flex-grow: 1;
 }
 .header__logo-toggle{
 

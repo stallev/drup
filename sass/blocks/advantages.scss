@@ -1,0 +1,9 @@
+.advantages{
+  &__list{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item{
+    width: 337px;
+  }
+}
