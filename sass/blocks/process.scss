@@ -1,0 +1,22 @@
+.process{
+  margin-bottom: 130px;
+  &__content{
+    display: flex;
+    flex-direction: column;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item{
+    display: flex;
+    width: 500px;
+  }
+  &__image{
+    align-self: center;
+    margin: 25px 0;
+  }
+}
+.process__item{
+  justify-content: space-around;
+}

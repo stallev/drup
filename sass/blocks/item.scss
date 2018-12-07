@@ -2,13 +2,39 @@
   &__content{
     display: flex;
   }
+  &__content--advantages{
+    flex-direction: row;
+  }
+  &__content--process{
+    flex-direction: column;
+    width: 322px;
+  }
   &__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('../img/rectangle.png');
     background-repeat: no-repeat;
-    background-size: 35%;
-    background-position: -31px -14px;
+    background-position: -17px -8px;
+    &--advantages{
+      width: 85px;
+      height: 85px;
+    }
+    &--process{
+      width: 100px;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+      background-position: -21px -8px;
+      background-size: 141%;
+    }
+  }
+  &__image-figure{
+    align-items: stretch;
   }
   &__title{
+    margin-left: 25px;
+    vertical-align: middle;
     text-align: center;
     color: $text_color;
     font-family: Roboto;
@@ -16,6 +42,18 @@
     font-weight: 700;
     line-height: 36px;
     letter-spacing: 0.4px;
+  }
+  &__title--process{
+    text-align: left;
+    margin-left: 0;
+  }
+  &__number{
+    color: $nav_text_color;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.8px;
   }
   &__text{
     opacity: $sm_text_opacity;

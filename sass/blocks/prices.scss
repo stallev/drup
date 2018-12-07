@@ -1,0 +1,15 @@
+.prices{
+  &__items-list{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__decor-list{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__decor-item{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
