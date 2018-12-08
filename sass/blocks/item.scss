@@ -9,6 +9,10 @@
     flex-direction: column;
     width: 322px;
   }
+  &__content--prices{
+    flex-direction: column;
+    align-items: center;
+  }
   &__image{
     display: flex;
     align-items: center;
@@ -28,6 +32,15 @@
       background-position: -21px -8px;
       background-size: 141%;
     }
+    &--prices{
+      width: 210px;
+      height: 210px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-position: -42px -19px;
+      background-size: 141%;
+    }
   }
   &__image-figure{
     align-items: stretch;
@@ -37,7 +50,7 @@
     vertical-align: middle;
     text-align: center;
     color: $text_color;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: $item_title_fsz;
     font-weight: 700;
     line-height: 36px;
@@ -47,9 +60,12 @@
     text-align: left;
     margin-left: 0;
   }
+  &__title--prices{
+    margin-bottom: 15px;
+  }
   &__number{
     color: $nav_text_color;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
@@ -67,5 +83,31 @@
   &__decorate{
     display: flex;
     justify-content: center;
+  }
+  &__value{
+    color: $nav_text_color;
+    font-family: 'Roboto';
+    font-size: $section_text_fsz;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 1.2px;
+  }
+  &__unit-of-count{
+    color: $nav_text_color;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.36px;
+  }
+  &__price-text{
+    opacity: $sm_text_opacity;
+    color: $text_color;
+    font-family: 'Roboto';
+    font-size: $sm_text_fsz;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    text-align: center;
   }
 }
