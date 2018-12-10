@@ -1,10 +1,20 @@
 .recalls{
+  &__slider{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__control{
+    width: 15px;
+    height: 30px;
+    display: block;
+  }
   &__slide{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 0 310px;
+    width: 590px;
     margin: 40px 0;
   }
   &__slide-text{
