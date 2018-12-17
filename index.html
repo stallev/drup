@@ -227,29 +227,33 @@
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="34" viewBox="0 0 19 34"><defs><path id="7ieva" d="M589.376 4804.986L574.985 4790l14.39-14.987"/><clipPath id="7ievb"><use fill="#fff" xlink:href="#7ieva"/></clipPath></defs><g><g opacity=".2" transform="translate(-572 -4773)"><use fill="#fff" fill-opacity="0" stroke="#1c2347" stroke-miterlimit="50" stroke-width="8" clip-path="url(&quot;#7ievb&quot;)" xlink:href="#7ieva"/></g></g></svg>
 					</button>
 					<div class="recalls__slider-list">
-						<div class="recalls__slide recalls__slide--current">
-							<img src="../img/user_logo1.png" alt="#" class="recalls__slide-person-pic">
-							<p class="recalls__slide-text">
-							Cоздание интернет-магазина на CMS DRUPAL - это возможность вывести Ваш бизнес на новый уровень, повысить количество продаж, получить новых клиентов и расширить возможности бизнеса.
-							</p>
-							<p class="recalls__slide-person">
-								Иван Иванов
-							</p>
-							<span class="recalls__slide-company">
-								WebArt &amp; Co
-							</span>
+						<div class="recalls__slide-wrapper  recalls__slide-wrapper--current">
+							<div class="recalls__slide">
+								<img src="../img/user_logo1.png" alt="#" class="recalls__slide-person-pic">
+								<p class="recalls__slide-text">
+								Cоздание интернет-магазина на CMS DRUPAL - это возможность вывести Ваш бизнес на новый уровень, повысить количество продаж, получить новых клиентов и расширить возможности бизнеса.
+								</p>
+								<p class="recalls__slide-person">
+									Иван Иванов
+								</p>
+								<span class="recalls__slide-company">
+									WebArt &amp; Co
+								</span>
+							</div>
 						</div>
-						<div class="recalls__slide">
-							<img src="../img/user_logo1.png" alt="#" class="recalls__slide-person-pic">
-							<p class="recalls__slide-text">
-							Cоздание интернет-магазина на CMS DRUPAL - это возможность вывести Ваш бизнес на новый уровень, повысить количество продаж, получить новых клиентов и расширить возможности бизнеса.
-							</p>
-							<p class="recalls__slide-person">
-								Петр Петров
-							</p>
-							<span class="recalls__slide-company">
-								ClassArt &amp; Co
-							</span>
+						<div class="recalls__slide-wrapper">
+							<div class="recalls__slide">
+								<img src="../img/user_logo1.png" alt="#" class="recalls__slide-person-pic">
+								<p class="recalls__slide-text">
+								Cоздание интернет-магазина на CMS DRUPAL - это возможность вывести Ваш бизнес на новый уровень, повысить количество продаж, получить новых клиентов и расширить возможности бизнеса.
+								</p>
+								<p class="recalls__slide-person">
+									Петр Петров
+								</p>
+								<span class="recalls__slide-company">
+									ClassArt &amp; Co
+								</span>
+							</div>
 						</div>
 					</div>
 					<button class="recalls__control recalls__control--next-slide">
@@ -264,47 +268,51 @@
 	</main>
 	<footer class="footer">
 		<section class="section orders">
-			<div class="container">
-				<h2 class="section__title">Мы ждем вашу заявку</h2>
-				<div class="orders__image">
-					<img src="../img/Color_balance.png" alt="#" class="orders__image-pic">
-				</div>
-				<form action="https://google.by" class="orders__form">
-					<fieldset>
-						<div class="orders__fields-list">
-							<input type="text" class="orders__input" placeholder="Ваше имя">
-							<input type="text" class="orders__input" placeholder="E-mail">
-							<input type="text" class="orders__input" placeholder="Телефон">
-							<input type="text" class="orders__input" placeholder="Ваш сайт">
-							<input type="textarea" class="orders__input" placeholder="Описание задачи">
-							<div class="orders__acception">
-								<input type="checkbox" class="orders__input-checkbox" id="acception-chk">
-								<label for="acception-chk">
-									<strong>Я даю </strong>согласие на обработку персональных данных
-								</label>
+			<div class="container container--section">
+				<h2 class="section__title section__title--orders">Мы ждем вашу заявку</h2>
+				<div class="orders__content">
+					<div class="orders__image">
+						<img src="../img/request_eff.png" alt="#" class="orders__image-pic">
+					</div>
+					<form action="https://google.by" class="orders__form">
+						<fieldset>
+							<div class="orders__fields-list">
+								<input type="text" class="orders__input" placeholder="Ваше имя">
+								<input type="text" class="orders__input" placeholder="E-mail">
+								<input type="text" class="orders__input" placeholder="Телефон">
+								<input type="text" class="orders__input" placeholder="Ваш сайт">
+								<input type="textarea" class="orders__input orders__input--textarea" placeholder="Описание задачи">
+								<div class="orders__acception">
+									<input type="checkbox" class="orders__input-checkbox" id="acception-chk">
+									<label for="acception-chk" class="orders__label orders__label--acception">
+										<strong>Я даю </strong>согласие на обработку персональных данных
+									</label>
+								</div>
+								<input type="button" class="orders__form-submit" name="confirm" value="Отправить">
 							</div>
-							<input type="button" class="orders__form-submit" name="confirm" value="Отправить">
-						</div>
-					</fieldset>
-				</form>
+						</fieldset>
+					</form>
+				</div>
 			</div>
 		</section>
 		<section class="about-us">
-			<div class="container">
-				<div>
-					<div class="footer__social social">
-						<a href="#" class="social__link social__link--skype"></a>
-						<a href="#" class="social__link social__link--vk"></a>
-						<a href="#" class="social__link social__link--facebook"></a>
+			<div class="container container--section">
+				<div class="about-us__content">
+					<div class="about-us__social-wrapper">
+						<div class="footer__social social">
+							<a href="#" class="social__link social__link--skype"></a>
+							<a href="#" class="social__link social__link--vk"></a>
+							<a href="#" class="social__link social__link--facebook"></a>
+						</div>
+						<p class="about-us__copyright">
+							&copy; Copyright 2018. Drupal-Help
+						</p>
 					</div>
-					<p class="about-us__copyright">
-						&copy; Copyright 2018. Drupal-Help
-					</p>
-				</div>
-				<div>
-					<h5 class="about-us__title">О НАС</h5>
-					<p class="about-us__description">Мы предлагаем Вам профессиональную доработку и поддержку сайтов на CMS DRUPAL,
-					разработку новых сайтов и интернет-магазинов.</p>
+					<div class="about-us__text-wrapper">
+						<h5 class="about-us__title">О НАС</h5>
+						<p class="about-us__description">Мы предлагаем Вам профессиональную доработку и поддержку сайтов на CMS DRUPAL,
+						разработку новых сайтов и интернет-магазинов.</p>
+					</div>
 				</div>
 			</div>
 		</section>

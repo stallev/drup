@@ -13,14 +13,17 @@
     display: block;
   }
   &__slide{
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  }
+  &__slide-wrapper{
+    display: none;
     width: 590px;
     margin: 40px 0;
     &--current{
-      display: flex;
+      display: block;
     }
   }
   &__slide-text{

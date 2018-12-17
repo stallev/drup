@@ -9,6 +9,11 @@
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 1.2px;
+    &--orders{
+      padding-top: 50px;
+      margin-bottom: 100px;
+      color: $h1_descr_color;
+    }
   }
   &__about{
     width: 720px;
