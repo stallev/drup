@@ -1,15 +1,12 @@
 .orders{
-  background-image: linear-gradient(-100deg, $text_color 0%, #00547a 100%);
   &__title{
   }
   &__content{
     display: flex;
-    padding-bottom: 80px;
   }
   &__fields-list{
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
   }
   &__input{
     margin-bottom: 15px;
