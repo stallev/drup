@@ -1,8 +1,8 @@
 {
-  "name": "tp1",
+  "name": "latte",
   "version": "1.0.0",
   "private": true,
-  "description": "tp11",
+  "description": "latte",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
     "bootstrap-sass": "^3.3.7",
@@ -19,10 +19,7 @@
     "gulp-sass": "^3.1.0",
     "gulp.spritesmith": "^6.4.0",
     "merge2": "^1.0.3",
-    "run-sequence": "^1.2.2",
-    "gulp.spritesmith": "latest",
-    "run-sequence": "latest",
-    "smart-grid": "latest"
+    "run-sequence": "^1.2.2"
   },
   "scripts": {
     "build": "gulp build",

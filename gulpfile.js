@@ -15,45 +15,6 @@ var run = require('run-sequence');
 var del = require('del');
 var rename = require('gulp-rename');
 var ghPages = require('gulp-gh-pages');
-var smartGrid = require('smart-grid');
-
-gulp.task('smartGR', function(){
-  var settingsSmartGrid = {
-    outputStyle: 'scss', /* less || scss || sass || styl */
-    columns: 12, /* number of grid columns */
-    offset: '30px', /* gutter width px || % */
-    mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
-    container: {
-        maxWidth: '1200px', /* max-width оn very large screen */
-        fields: '30px' /* side fields */
-    },
-    breakPoints: {
-        lg: {
-            width: '1100px', /* -> @media (max-width: 1100px) */
-        },
-        md: {
-            width: '960px'
-        },
-        sm: {
-            width: '780px',
-            fields: '15px' /* set fields only if you want to change container.fields */
-        },
-        xs: {
-            width: '560px'
-        }
-        /* 
-        We can create any quantity of break points.
- 
-        some_name: {
-            width: 'Npx',
-            fields: 'N(px|%|rem)',
-            offset: 'N(px|%|rem)'
-        }
-        */
-    }
-};
-return smartGrid('sass', settingsSmartGrid);
-})
 
 gulp.task('style', function() {
   gulp.src('sass/style.scss')
@@ -81,14 +42,14 @@ gulp.task('serve', ['style'], function() {
     ui: false
   });
   
-  gulp.watch('sass/**/*.{scss,sass}', ['style']).on('change', server.reload);
+  gulp.watch('sass/**/*.{scss,sass}', ['style']);
   gulp.watch('*.html', ['copyHtml']);
   gulp.watch('build/*.html').on('change', server.reload);
 });
 
 gulp.task('copy', function(){
   return gulp.src([
-    'fonts/**/*.{woff,woff2}',
+    'fonts/**/*.{eot,svg,ttf,woff,woff2}',
     'js/**',
     'img/*.svg',
     '*.html'
@@ -134,7 +95,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('build', function(fn){
-  run('clean', 'copy', 'smartGR', 'copyBootstrapJS', 'images', 'style', fn);
+  run('clean', 'copy', 'copyBootstrapJS', 'images', 'style', fn);
 });
 
 gulp.task('server', function(){
